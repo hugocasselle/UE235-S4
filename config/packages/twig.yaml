@@ -1,6 +1,10 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
+    globals:
+        categories: '@App\Twig\CategoryExtension'
+        articles: '@App\Twig\ArticleExtension'
 
 when@test:
     twig:
         strict_variables: true
+

@@ -12,5 +12,6 @@ class BlogController extends AbstractController
     public function index(): Response
     {
         return $this->redirectToRoute('article_index');
+
     }
 }
