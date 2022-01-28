@@ -1,6 +1,100 @@
-body {
-    background-color: blue;
-    font-family: arial sans-serif;
+body
+{
+  background-color: white;
+  font-family: arial sans-serif;
+}
+
+*, *::before, *::after
+{
+  margin : 0 !important;
+  padding : 0 !important;
+  box-sizing : border-box !important;
+}
+
+.navbar
+{
+  color : white !important;
+}
+
+.navbar, .navbar-expand-lg, .container-fluid, .table_reduce
+{
+  margin : 0 auto !important;
+  padding : 0.5rem !important;
+}
+
+.container-fluid
+{
+  background-color : #CECEEB;
+  box-shadow : 0px 10px 20px 5px rgba(250,234,255,0.75);
+  border-radius : 50px;
+  flex-basis : 75%;
+}
+
+.table_reduce
+{
+  width : 60%;
+}
+
+.navbar_brand
+{
+  padding : 0.5rem;
+}
+
+.nav-link
+{
+  padding : 0.5rem 1rem !important;
+}
+
+h1
+{
+  text-align : center;
+  margin : 1rem 0 !important;
+}
+
+tr
+{
+  border-right : 1px solid #7F7192;
+}
+
+.cntnr
+{
+  height : auto;
+  position : relative;
+  margin-top : 2rem !important;
+}
+
+.add_more_center
+{
+  display : flex;
+  justify-content : center;
+}
+
+.add_more, .back, .delete
+{
+  background-color : #CECEEB;
+  color : black;
+  padding : 0.5rem 1rem !important;
+  border-radius : 10px;
+  text-decoration : none;
+  text-align : center;
+}
+
+.add_more:hover
+{
+  background-color: #FAEAFF;
+  color : black;
+  border-radius : 25px;
+  transition : all 0.5s;
+}
+
+a, tr, th, td
+{
+  text-align : center;
+}
+
+.no_content
+{
+  text-align : left;
 }
 // the ~ allows you to reference things in node_modules
 
