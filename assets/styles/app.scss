@@ -96,6 +96,13 @@ a, tr, th, td
 {
   text-align : left;
 }
+
+//Astérisques formulaires de connexion/d'inscription
+.red
+{
+  color: red;
+}
+
 // the ~ allows you to reference things in node_modules
 
 @import "~bootstrap/scss/bootstrap";
