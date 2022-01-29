@@ -7,7 +7,11 @@
 
     {{ include('category/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('category_index') }}">Retour à la liste</a>
+    <div class="cntnr">
+      <div class="add_more_center">
+        <a href="{{ path('category_index') }}" class="back">Retour à la liste</a>
+      </div>
+    </div>
 
     {{ include('category/_delete_form.html.twig') }}
 {% endblock %}

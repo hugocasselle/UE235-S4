@@ -24,7 +24,6 @@ body
 
 .container-fluid
 {
-  background-color : #CECEEB;
   box-shadow : 0px 10px 20px 5px rgba(250,234,255,0.75);
   border-radius : 50px;
   flex-basis : 75%;
@@ -37,7 +36,7 @@ body
 
 .navbar_brand
 {
-  padding : 0.5rem;
+  margin-left : 1rem !important;
 }
 
 .nav-link
@@ -56,6 +55,11 @@ tr
   border-right : 1px solid #7F7192;
 }
 
+tr:last-child
+{
+  border-right : none;
+}
+
 .cntnr
 {
   height : auto;
@@ -71,7 +75,6 @@ tr
 
 .add_more, .back, .delete
 {
-  background-color : #CECEEB;
   color : black;
   padding : 0.5rem 1rem !important;
   border-radius : 10px;
@@ -79,9 +82,14 @@ tr
   text-align : center;
 }
 
-.add_more:hover, .back:hover, .delete:hover
+.add_more, .back, .delete, .container-fluid, .btn
 {
-  background-color: #FAEAFF;
+  background-color : #48FBE5;
+}
+
+.add_more:hover, .back:hover, .delete:hover, .nav-link:hover, .btn:hover
+{
+  background-color: #00FBFF;
   color : black;
   border-radius : 25px;
   transition : all 0.5s;
@@ -102,6 +110,9 @@ a, tr, th, td
 {
   color: red;
 }
+
+//formulaires d'ajout d'article et de Catégorie
+
 
 // the ~ allows you to reference things in node_modules
 
