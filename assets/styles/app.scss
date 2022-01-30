@@ -73,27 +73,27 @@ tr:last-child
   justify-content : center;
 }
 
-.add_more, .back, .delete, .btn_styled
+.add_more, .back, .delete, .btn_styled, .btn-primary, .btn-secondary
 {
-  color : black;
+  color : black !important;
   padding : 0.5rem 1rem !important;
-  border-radius : 10px;
-  border : none;
-  text-decoration : none;
-  text-align : center;
+  border-radius : 10px !important;
+  border : none !important;
+  text-decoration : none !important;
+  text-align : center !important;
 }
 
-.add_more, .back, .delete, .container-fluid, .btn_styled
+.add_more, .back, .delete, .container-fluid, .btn_styled, .btn-primary, .btn-secondary
 {
   background-color : #48FBE5 !important;
 }
 
-.add_more:hover, .back:hover, .delete:hover, .nav-link:hover, .btn_styled:hover
+.add_more:hover, .back:hover, .delete:hover, .nav-link:hover, .btn_styled:hover, .btn-primary:hover, .btn-secondary:hover
 {
-  background-color: #00FBFF;
-  color : black;
-  border-radius : 25px;
-  transition : all 0.5s;
+  background-color: #00FBFF !important;
+  color : black !important;
+  border-radius : 25px !important;
+  transition : all 0.5s !important;
 }
 
 a, tr, th, td
@@ -104,6 +104,11 @@ a, tr, th, td
 .no_content
 {
   text-align : left;
+}
+
+.modal-title, .form-label, .col-form-label
+{
+  color : black !important;
 }
 
 //Astérisques formulaires de connexion/d'inscription
