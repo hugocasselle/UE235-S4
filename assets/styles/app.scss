@@ -85,7 +85,7 @@ tr:last-child
   text-decoration : overline;
 }
 
-.add_more, .back, .delete, .btn_styled, .btn-primary, .btn-secondary
+.add_more, .back, .delete, .btn_styled, .btn-primary
 {
   color : black !important;
   padding : 0.5rem 1rem !important;
@@ -95,12 +95,12 @@ tr:last-child
   text-align : center !important;
 }
 
-.add_more, .back, .delete, .container-fluid, .btn_styled, .btn-primary, .btn-secondary
+.add_more, .back, .delete, .container-fluid, .btn_styled, .btn-primary
 {
   background-color : #48FBE5 !important;
 }
 
-.add_more:hover, .back:hover, .delete:hover, .nav-link:hover, .btn_styled:hover, .btn-primary:hover, .btn-secondary:hover
+.add_more:hover, .back:hover, .delete:hover, .nav-link:hover, .btn_styled:hover, .btn-primary:hover
 {
   background-color: #00FBFF !important;
   color : black !important;
