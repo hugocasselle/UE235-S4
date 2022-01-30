@@ -40,9 +40,19 @@
           </tbody>
       </table>
     </div>
-    <div class="cntnr">
-      <div class="add_more_center">
-        <a href="{{ path('article_new') }}" class="add_more">Ajouter un nouvel article</a>
-      </div>
-    </div>
+
+    {% if app.user %}
+        
+        <div class="cntnr">
+            <div class="add_more_center">
+                <a href="{{ path('article_new') }}" class="add_more">Ajouter un nouvel article</a>
+            </div>
+        </div>
+
+    {% else %}
+        <div class="cntnr add_more_center">
+            <p>Vous devez être connecté pour écrire un article.
+            </p>
+        </div>
+    {% endif %}
 {% endblock %}

@@ -3,6 +3,7 @@
 {% block title %}Nouvel article{% endblock %}
 
 {% block body %}
+    {% if app.user %}
     <h1>Créer un nouvel article</h1>
 
     {{ include('article/_form.html.twig') }}
@@ -13,4 +14,10 @@
       </div>
     </div>
 
+{% else %}
+    <div class="cntnr add_more_center">
+    <p>Vous devez être connecté pour écrire un article.
+    </p>
+    </div>
+    {% endif %}
 {% endblock %}
