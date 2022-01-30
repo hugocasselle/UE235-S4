@@ -10,6 +10,7 @@
           <thead>
               <tr>
                   <th>Index</th>
+                  <th>Auteur</th>
                   <th>Titre</th>
                   <th>Catégorie</th>
                   <th>Contenu</th>
@@ -20,6 +21,7 @@
           {% for article in articles_index %}
               <tr>
                   <td>{{ article.id }}</td>
+                  <td>{{ article.users.pseudonyme }}</td>
                   <td>{{ article.title }}</td>
                   <td>
                       {% if article.Category.name is defined %}
@@ -42,7 +44,7 @@
     </div>
 
     {% if app.user %}
-        
+
         <div class="cntnr">
             <div class="add_more_center">
                 <a href="{{ path('article_new') }}" class="add_more">Ajouter un nouvel article</a>
