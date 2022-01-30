@@ -73,6 +73,18 @@ tr:last-child
   justify-content : center;
 }
 
+.btn_table
+{
+  color : #00C2C6 !important;
+  text-decoration : none;
+}
+
+.btn_table:hover
+{
+  color : #84B5A5 !important;
+  text-decoration : overline;
+}
+
 .add_more, .back, .delete, .btn_styled, .btn-primary, .btn-secondary
 {
   color : black !important;
