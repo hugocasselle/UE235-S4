@@ -1,7 +1,125 @@
-body {
-    background-color: blue;
-    font-family: ;
+body
+{
+  background-color: white;
+  font-family: arial sans-serif;
 }
+
+*, *::before, *::after
+{
+  margin : 0 !important;
+  padding : 0 !important;
+  box-sizing : border-box !important;
+}
+
+.navbar
+{
+  color : white !important;
+}
+
+.navbar, .navbar-expand-lg, .container-fluid, .table_reduce
+{
+  margin : 0 auto !important;
+  padding : 0.5rem !important;
+}
+
+.container-fluid
+{
+  box-shadow : 0px 10px 20px 5px rgba(250,234,255,0.75);
+  border-radius : 50px;
+  flex-basis : 75%;
+}
+
+.table_reduce
+{
+  width : 60%;
+}
+
+.navbar_brand
+{
+  margin-left : 1rem !important;
+}
+
+.nav-link
+{
+  padding : 0.5rem 1rem !important;
+}
+
+h1
+{
+  text-align : center;
+  margin : 1rem 0 !important;
+}
+
+tr
+{
+  border-right : 1px solid #7F7192;
+}
+
+tr:last-child
+{
+  border-right : none;
+}
+
+.cntnr
+{
+  height : auto;
+  position : relative;
+  margin-top : 2rem !important;
+}
+
+.add_more_center
+{
+  display : flex;
+  justify-content : center;
+}
+
+.add_more, .back, .delete, .btn_styled, .btn-primary, .btn-secondary
+{
+  color : black !important;
+  padding : 0.5rem 1rem !important;
+  border-radius : 10px !important;
+  border : none !important;
+  text-decoration : none !important;
+  text-align : center !important;
+}
+
+.add_more, .back, .delete, .container-fluid, .btn_styled, .btn-primary, .btn-secondary
+{
+  background-color : #48FBE5 !important;
+}
+
+.add_more:hover, .back:hover, .delete:hover, .nav-link:hover, .btn_styled:hover, .btn-primary:hover, .btn-secondary:hover
+{
+  background-color: #00FBFF !important;
+  color : black !important;
+  border-radius : 25px !important;
+  transition : all 0.5s !important;
+}
+
+a, tr, th, td
+{
+  text-align : center;
+}
+
+.no_content
+{
+  text-align : left;
+}
+
+.modal-title, .form-label, .col-form-label
+{
+  color : black !important;
+}
+
+//Astérisques formulaires de connexion/d'inscription
+.red
+{
+  color: red;
+}
+
+//formulaires d'ajout d'article et de Catégorie
+
+
 // the ~ allows you to reference things in node_modules
 
 @import "~bootstrap/scss/bootstrap";
