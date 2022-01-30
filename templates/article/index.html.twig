@@ -28,8 +28,8 @@
                   </td>
                   <td>{{ article.content }}</td>
                   <td>
-                      <a href="{{ path('article_show', {'id': article.id}) }}">Ouvrir</a>
-                      <a href="{{ path('article_edit', {'id': article.id}) }}">Éditer</a>
+                      <a href="{{ path('article_show', {'id': article.id}) }}" class="btn_styled">Ouvrir</a>
+                      <a href="{{ path('article_edit', {'id': article.id}) }}" class="btn_styled">Éditer</a>
                   </td>
               </tr>
           {% else %}
@@ -38,7 +38,7 @@
               </tr>
           {% endfor %}
           </tbody>
-      </table>      
+      </table>
     </div>
     <div class="cntnr">
       <div class="add_more_center">

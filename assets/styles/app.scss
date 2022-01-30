@@ -73,21 +73,22 @@ tr:last-child
   justify-content : center;
 }
 
-.add_more, .back, .delete
+.add_more, .back, .delete, .btn_styled
 {
   color : black;
   padding : 0.5rem 1rem !important;
   border-radius : 10px;
+  border : none;
   text-decoration : none;
   text-align : center;
 }
 
-.add_more, .back, .delete, .container-fluid, .btn
+.add_more, .back, .delete, .container-fluid, .btn_styled
 {
-  background-color : #48FBE5;
+  background-color : #48FBE5 !important;
 }
 
-.add_more:hover, .back:hover, .delete:hover, .nav-link:hover, .btn:hover
+.add_more:hover, .back:hover, .delete:hover, .nav-link:hover, .btn_styled:hover
 {
   background-color: #00FBFF;
   color : black;
