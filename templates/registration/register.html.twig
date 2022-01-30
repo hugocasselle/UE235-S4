@@ -4,15 +4,19 @@
 
 {% block body %}
     <h1>Inscription</h1>
-
-    {{ form_start(registrationForm) }}
+    <div class="cntnr add_more_center">
+        {{ form_start(registrationForm) }}
         {{ form_row(registrationForm.email) }}
         {{ form_row(registrationForm.pseudonyme) }}
         {{ form_row(registrationForm.plainPassword, {
             label: 'Mot de passe '
         }) }}
 
+        <div class="cntnr add_more_center btn_styled">
+            <button type="submit" class="btn">S'inscrire</button>
 
-        <button type="submit" class="btn">S'inscrire</button>
-    {{ form_end(registrationForm) }}
+            {{ form_end(registrationForm) }}
+        </div>
+    </div>
+
 {% endblock %}
