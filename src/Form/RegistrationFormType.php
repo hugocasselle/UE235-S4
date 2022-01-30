@@ -43,7 +43,7 @@ class RegistrationFormType extends AbstractType
                     ]),
                 ],
             ])
-        ;
+            ->add('pseudonyme');
     }
 
     public function configureOptions(OptionsResolver $resolver): void

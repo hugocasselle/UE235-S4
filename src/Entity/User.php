@@ -33,6 +33,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(mappedBy: 'users', targetEntity: Article::class, orphanRemoval: true)]
     private $articles;
 
+    #[ORM\Column(type: 'string', length: 25)]
+    private $pseudonyme;
+
     public function __construct()
     {
         $this->articles = new ArrayCollection();
@@ -153,6 +156,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
                 $article->setUsers(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getPseudonyme(): ?string
+    {
+        return $this->pseudonyme;
+    }
+
+    public function setPseudonyme(string $pseudonyme): self
+    {
+        $this->pseudonyme = $pseudonyme;
 
         return $this;
     }
