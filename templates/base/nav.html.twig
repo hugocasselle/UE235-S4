@@ -46,12 +46,9 @@
                     </li>
                 </ul>
                 {% if app.user %}
-                    <a href="{{ path('app_logout') }}">Logout</a>
+                    <a href="/logout/" class="add_more">Déconnexion</a> 
                 {% else %}
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#connexion">
-                      Se connecter
-                    </button>
+                    <a href="/login/" class="add_more">Connexion</a> 
                 {% endif %}
             </div>
         </div>
